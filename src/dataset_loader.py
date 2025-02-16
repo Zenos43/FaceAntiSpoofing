@@ -1,5 +1,5 @@
 # Original code https://github.com/minivision-ai/Silent-Face-Anti-Spoofing by @zhuyingSeu
-# Modified by @hairymax
+# Modified by Zenos43
 # Validation and training loaders implemented
 # CelebADataset with and w/o FT implemented
 

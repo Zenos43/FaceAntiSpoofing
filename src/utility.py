@@ -30,18 +30,6 @@ def spoof_labels_to_classes(labels_df, classes):
 def plot_value_counts(series, n_values=25, fillna='NONE', figwidth=12, 
                       bar_thickness=0.5, sort_index=False,
                       verbose=False, show_percents=False):
-    ''' Визуализация количества встречающихся значений в pd.Series
-
-    Параметры
-    ---
-    `series` : pd.Series
-    `column` : str - название столбца
-    `n_values` : int - максимальное количество значений для отображения на диаграмме
-    `fillna` : Any - значение, которым необходимо заполнить пропуски
-    `verbose`: bool - показывать ли уникальные значения
-    `show_percents`: bool - показывать долю значений в процентах
-    '''
-
     _ = series.dropna().unique()
     if verbose:
         print('`{}`, {} unique values: \n{}'.format(series.name, len(_), sorted(_)))
