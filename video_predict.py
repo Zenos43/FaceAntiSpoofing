@@ -200,12 +200,12 @@ if __name__ == "__main__":
 
             # Nếu video được chụp từ webcam
             if not args.input:
-                cv2.imshow("Chống giả mạo khuôn mặt", frame)  # Hiển thị khung hình
+                cv2.imshow("DNTU_FaceAntiSpoofing", frame)  # Hiển thị khung hình
                 key = cv2.waitKey(20)  # Chờ một phím được nhấn
                 if (key == ord("q")) or key == 27:
                     break  # Thoát khỏi vòng lặp nếu 'q' hoặc 'Esc' được nhấn
         else:
-            print("Luồng đang tắt")  # In một thông báo
+            print("Tắt tiến trình")  # In một thông báo
             break  # Thoát khỏi vòng lặp
 
     # Giải phóng các đối tượng video capture và writer
